@@ -20,6 +20,7 @@ public class SellerController
 	private SellerService service;
 	
 	@GetMapping
+	// http://localhost:8080/sellers
 	public ResponseEntity<List<SellerDTO>> findAll()
 	{
 		
@@ -27,5 +28,6 @@ public class SellerController
 		return ResponseEntity.ok(list);
 		
 	}
+	
 
 }
